@@ -50,7 +50,7 @@ public class EmployeeService {
 	}
 
 	public void updateEmployee(Employee employee, int empId) {
-		list.stream().map(b -> {
+		list.stream().map(b -> {	
 
 			if (b.getEmpId() == empId) {
 				b.setName(employee.getName());
